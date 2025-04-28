@@ -196,7 +196,7 @@ function displayHand(elementId, hand, hideSecondCard = false) {
     } else {
       const top = (card.value + card.suit).padEnd(14, ' ');
       const bottom = (card.suit + card.value).padStart(14, ' ');
-      cardDiv.textContent = `################\n# ${top} #\n#              #\n#              #\n#              #\n#              #\n#              #\n#              #\n# ${bottom} #\n################`;
+      cardDiv.textContent = `################\n#${top} #\n#              #\n#              #\n#              #\n#              #\n#              #\n#              #\n#${bottom} #\n################`;
     }
     container.appendChild(cardDiv);
   });
